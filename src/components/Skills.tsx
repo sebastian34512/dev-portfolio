@@ -18,7 +18,7 @@ const Skills: React.FC<Props> = ({ sharedBasicInfo, resumeBasicInfo }) => {
           <div className="text-center skills-tile">
             <i className={skill.class} style={{ fontSize: "220%" }}>
               <p
-                className="text-center"
+                className="text-center skill-name"
                 style={{ fontSize: "30%", marginTop: "4px" }}
               >
                 {skill.name}

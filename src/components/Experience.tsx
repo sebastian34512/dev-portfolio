@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 import { ResumeData } from "../types/types";
+import { accentColor, secondaryColor, tertiaryColor } from "../colors";
 
 interface Props {
   resumeBasicInfo?: ResumeData;
@@ -32,11 +33,11 @@ const Experience: React.FC<Props> = ({ resumeBasicInfo }) => {
         className="vertical-timeline-element--work"
         date={workItem.years}
         iconStyle={{
-          background: "#AE944F",
+          background: accentColor,
           color: "#fff",
           textAlign: "center",
         }}
-        icon={<i className="fab fa-angular experience-icon"></i>}
+        icon={<i className={workItem.icon + " experience-icon"}></i>}
         key={i}
       >
         <div style={{ textAlign: "left", marginBottom: "4px" }}>{mainTech}</div>
@@ -73,7 +74,7 @@ const Experience: React.FC<Props> = ({ resumeBasicInfo }) => {
           {work}
           <VerticalTimelineElement
             iconStyle={{
-              background: "#AE944F",
+              background: secondaryColor,
               color: "#fff",
               textAlign: "center",
             }}

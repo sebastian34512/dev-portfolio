@@ -1,9 +1,9 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
+import nestIcon from "@iconify/icons-logos/nestjs";
 import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
-import { BasicInfo, ResumeData, SharedData } from "../types/types";
+import flutterIcon from "@iconify/icons-logos/flutter";
+import { ResumeData, SharedData } from "../types/types";
 
 interface Props {
   sharedBasicInfo?: SharedData;
@@ -34,17 +34,22 @@ const About: React.FC<Props> = ({ sharedBasicInfo, resumeBasicInfo }) => {
           <div className="col-md-4 mb-5 center">
             <div className="polaroid">
               <span style={{ cursor: "auto" }}>
-                <img height="250px" src={profilepic} alt="Avatar placeholder" />
-                <Icon
-                  icon={angularIcon}
-                  style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                <img
+                  height="250px"
+                  src={profilepic}
+                  alt="Avatar placeholder"
+                  style={{ objectFit: "cover" }}
                 />
                 <Icon
                   icon={reactIcon}
                   style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                 />
                 <Icon
-                  icon={vueIcon}
+                  icon={flutterIcon}
+                  style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                />
+                <Icon
+                  icon={nestIcon}
                   style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                 />
               </span>
@@ -85,7 +90,7 @@ const About: React.FC<Props> = ({ sharedBasicInfo, resumeBasicInfo }) => {
                   <span className="wave">{hello} :) </span>
                   <br />
                   <br />
-                  {about}
+                  <div dangerouslySetInnerHTML={{ __html: about || "" }} />
                 </div>
               </div>
             </div>

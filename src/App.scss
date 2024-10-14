@@ -2,6 +2,11 @@
 @import "./scss/themes/theme-light.scss";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap");
 
+$main-color: #e1efe6;
+$secondary-color: #0a8754;
+$tertiary-color: #223843;
+$accent-color: #ce2d4f;
+
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
@@ -38,13 +43,21 @@ header {
   -webkit-background-size: cover;
   text-align: center;
   overflow: hidden;
-  background-color: #e9d5a1;
+  background-color: $main-color;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 0;
+}
+
+.logo {
+  width: 50em;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 }
 
 .language-icon {
@@ -70,11 +83,63 @@ header {
   width: 100px;
   margin: 5px 0 5px 0;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease; /* Transition für das Hochrutschen */
+  margin-bottom: 20px;
+}
+
+.skills-tile:hover {
+  transform: translateY(-20px); /* Icon nach oben verschieben */
+}
+
+.skill-icon {
+  font-size: 180%;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.skill-name {
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  visibility: hidden; /* Standardmäßig verstecken */
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.skills-tile:hover .skill-name {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0s; /* Text sichtbar machen */
+}
+
+@media (max-width: 768px) {
+  /* Auf Tablets und kleineren Geräten immer anzeigen */
+  .skill-name {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .skills-tile {
+    transform: none; /* Kein Verschieben auf kleinen Geräten */
+    margin-bottom: 0px;
+  }
+}
+
+@media (hover: none) {
+  /* Deaktiviere Hover-Animationen auf Touch-Geräten */
+  .skills-tile:hover {
+    transform: none;
+  }
 }
 
 .language {
   font-size: 25px;
-  background-color: #e9d5a1;
+  background-color: $main-color;
   padding-bottom: 10px;
   padding-top: 80px;
 }
@@ -110,6 +175,14 @@ header h1 {
 #about {
   background: #fff;
   overflow: hidden;
+
+  a {
+    color: $accent-color !important;
+  }
+
+  a:visited {
+    color: $secondary-color !important;
+  }
 }
 
 #about h1 {
@@ -220,7 +293,7 @@ header h1 {
 }
 
 #resume {
-  background: #efe1bd;
+  background: $main-color;
 }
 
 .experience-icon {
@@ -234,10 +307,10 @@ header h1 {
   text-align: left !important;
   padding: 5px 8px 5px 8px !important;
   vertical-align: baseline;
-  background-color: #ae944f !important;
+  background-color: $secondary-color !important;
   color: white;
   font-weight: lighter !important;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .experience-badge {
@@ -245,10 +318,11 @@ header h1 {
   text-align: left !important;
   padding: 5px 8px 5px 8px !important;
   vertical-align: baseline;
-  background-color: #f9f5e9 !important;
+  background-color: $tertiary-color !important;
   color: black;
   font-weight: lighter !important;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 0.2em;
 }
 
 .vertical-timeline-element-date {
@@ -342,7 +416,7 @@ header h1 {
 }
 
 #portfolio {
-  background: #efe1bd;
+  background: $main-color;
   padding-bottom: 5%;
 }
 
@@ -371,6 +445,27 @@ header h1 {
   font-size: 1.5rem;
 }
 
+.toggle-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; /* Animation beim Ausklappen */
+}
+
+.expandable-content.expanded {
+  max-height: 1000px; /* Großer Wert, um alle Projekte anzuzeigen */
+}
+
 @media (min-width: 576px) {
   .portfolio .closeButtonResponsive {
     display: block;
@@ -396,13 +491,6 @@ header h1 {
   letter-spacing: 3px;
   color: #fff;
   text-align: center;
-}
-
-.skill-icon {
-  font-size: 180%;
-  color: white;
-  text-align: center;
-  position: relative;
 }
 
 footer {

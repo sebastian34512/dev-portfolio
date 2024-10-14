@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
 import { BasicInfo } from "../types/types";
+import { secondaryColor, tertiaryColor } from "../colors";
 
 interface Props {
   sharedData?: BasicInfo;
@@ -49,11 +50,12 @@ const Header: React.FC<Props> = ({ sharedData }) => {
       <div className="row aligner" style={{ height: "100%" }}>
         <div className="col-md-12">
           <div>
-            <span
-              className="iconify header-icon"
-              data-icon="la:laptop-code"
-              data-inline="false"
-            ></span>
+            <img
+              src="images/Logo.svg"
+              alt="Logo"
+              className="logo"
+              style={{ marginBottom: "2em" }}
+            />
             <br />
             <h1 className="mb-0">
               <Typical steps={[name || ""]} wrapper="p" />
@@ -64,8 +66,8 @@ const Header: React.FC<Props> = ({ sharedData }) => {
             <Switch
               checked={checked}
               onChange={onThemeSwitchChange}
-              offColor="#baaa80"
-              onColor="#353535"
+              offColor={secondaryColor}
+              onColor={tertiaryColor}
               className="react-switch mx-auto"
               width={90}
               height={40}

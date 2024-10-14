@@ -31,17 +31,17 @@ export interface BasicInfo {
   titles?: string[];
   social?: SocialLink[];
   image?: string;
-  description_header?: string; // Neu hinzugefügt
-  description?: string; // Neu hinzugefügt
-  section_name?: SectionNames; // Neu hinzugefügt
+  description_header?: string;
+  description?: string;
+  section_name?: SectionNames;
 }
 
 export interface Project {
   title: string;
   description: string;
-  startDate: string; // Neu hinzugefügt
+  startDate: string;
   images: string[];
-  url?: string; // Neu hinzugefügt
+  url?: string;
   technologies?: Technology[];
 }
 
@@ -51,9 +51,10 @@ export interface Experience {
   description: string;
   start_date: string;
   end_date?: string;
-  years?: string; // Neu hinzugefügt
-  mainTech?: string[]; // Neu hinzugefügt
-  technologies?: string[]; // Neu hinzugefügt
+  years?: string;
+  mainTech?: string[];
+  technologies?: string[];
+  icon?: string;
 }
 
 export interface ResumeData {

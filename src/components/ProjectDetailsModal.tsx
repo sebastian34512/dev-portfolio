@@ -31,6 +31,7 @@ const ProjectDetailsModal: React.FC<Props> = ({ data, onHide }) => {
 
   return (
     <Modal
+      show={true}
       onHide={onHide}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"

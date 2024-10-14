@@ -1,118 +1,212 @@
 {
-    "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experience": "Experience"
-      }
+  "basic_info": {
+    "description_header": "Hi",
+    "description": "👋 My name is Sebastian Koller. I am an ambitious web and mobile developer with extensive experience in Flutter, React, React Native, and Nest.js. I am always open to new experiences and insights, and I love to learn. Besides my programming projects, I enjoy working with my 3D printer, taking care of my numerous plants, and spending time with my cat. If you want to know more about me or my work, feel free to contact me at <a href='mailto:me@sebastiankoller.at'>me@sebastiankoller.at</a>.",
+    "section_name": {
+      "about": "About Me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience"
+    }
+  },
+  "projects": [
+    {
+      "title": "Environmental Storytelling",
+      "startDate": "2024",
+      "description": "In the Environmental Storytelling workshop during the 2024 Summer School week, we had to integrate a story into an environment. We chose a murder scene and incorporated many elements inspired by the events of the Manson Family and the murder of Sharon Tate. During the project, we deepened our Unity skills and worked on the assets using Blender and Photoshop.",
+      "images": [
+        "images/portfolio/environmental-storytelling/Pic2.png",
+        "images/portfolio/environmental-storytelling/Pic3.png",
+        "images/portfolio/environmental-storytelling/Pic4.png"
+      ],
+      "url": "https://www.youtube.com/watch?v=aBCjvf81zHM",
+      "technologies": [
+        {
+          "class": "devicon-unity-plain",
+          "name": "Unity"
+        },
+        {
+          "class": "devicon-photoshop-plain",
+          "name": "Photoshop"
+        },
+        {
+          "class": "devicon-blender-original",
+          "name": "Blender"
+        }
+      ]
     },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
-  }
+    {
+      "title": "Murder Menu",
+      "startDate": "2023-2024",
+      "description": "Murder Menu is a dinner and crime app that I have been working on with two colleagues since the start of my Master's program. In the project, we learned React Native, improved our skills in Nest.js, and generally learned a lot about app development and dev-team management. If you're interested in the app, feel free to check out our website.",
+      "images": [
+        "images/portfolio/murder-menu/screen_mockup.png",
+        "images/portfolio/murder-menu/Projektevernissage_SS24.jpg"
+      ],
+      "url": "https://murder-menu.com",
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React Native"
+        },
+        {
+          "class": "devicon-nestjs-plain",
+          "name": "Nest.js"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Ant Calculator",
+      "startDate": "2023",
+      "description": "The Ant Calculator was the initial project of the Mobile Master's class. The topic was 'print-to-mobile,' where you had to link a printed QR code to a digital product. The idea for the app came from a conversation with friends, and I used the project to refresh my Flutter skills.",
+      "images": [
+        "images/portfolio/ameisenrechner/ameisenrechner_mockup.png",
+        "images/portfolio/ameisenrechner/qr.jpeg"
+      ],
+      "url": "https://mfg.fhstp.ac.at/allgemein/print-to-mobile-ameisenrechner/",
+      "technologies": [
+        {
+          "class": "devicon-flutter-plain",
+          "name": "Flutter"
+        }
+      ]
+    },
+    {
+      "title": "INGO",
+      "startDate": "2023",
+      "description": "INGO is a project that I worked on with seven fellow students during the Bachelor's media technology project semester. Over six months, we developed an app using Flutter, Express.js, and Prisma, which allows users to manage their finances. The project was a key milestone in my career path, where I learned a lot about teamwork, project management, and app development. Unfortunately, the app is no longer available in stores, and the website is also inactive.",
+      "images": [
+        "images/portfolio/ingo/mockups.png",
+        "images/portfolio/ingo/gruppenfoto.png"
+      ],
+      "url": "https://www.instagram.com/ingoapp/",
+      "technologies": [
+        {
+          "class": "devicon-flutter-original",
+          "name": "Flutter"
+        },
+        {
+          "class": "devicon-express-plain",
+          "name": "Express.js"
+        }
+      ]
+    },
+    {
+      "title": "Bachelor Thesis Unity",
+      "startDate": "2023",
+      "description": "For my Bachelor's thesis, I developed a prototype in Unity. The aim was to evaluate Unity's capabilities for developing VR applications for educational purposes. In the prototype, the player is the size of a butterfly to experience the lifecycle of a butterfly up close.",
+      "images": [
+        "images/portfolio/bachelorarbeit/schmetterling.png",
+        "images/portfolio/bachelorarbeit/showcase.gif"
+      ],
+      "url": "https://github.com/sebastian34512/lifecycle",
+      "technologies": [
+        {
+          "class": "devicon-unity-plain",
+          "name": "Unity"
+        },
+        {
+          "class": "devicon-blender-original",
+          "name": "Blender"
+        }
+      ]
+    },
+    {
+      "title": "Automated Watering System",
+      "startDate": "2022",
+      "description": "My most complex 3D printing project was a control system for an automated watering system. I completed the project for two courses during my Bachelor's degree. I learned a lot about microcontrollers and electronics and was able to deepen my 3D printing skills.",
+      "images": [
+        "images/portfolio/watering/top.jpg",
+        "images/portfolio/watering/inside1.jpg",
+        "images/portfolio/watering/inside2.jpg"
+      ],
+      "url": "https://showreel.fhstp.ac.at/post/649",
+      "technologies": [
+        {
+          "class": "devicon-cplusplus-plain",
+          "name": "C++"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "FH St. Pölten",
+      "title": "Master Interactive Technologies",
+      "years": "09.2023 - present",
+      "mainTech": ["Masterclass Mobile"],
+      "icon": "fas fa-graduation-cap",
+      "technologies": [
+        "Flutter",
+        "Nest.js",
+        "Swift",
+        "Kotlin",
+        "Vue.js",
+        "React Native"
+      ]
+    },
+    {
+      "company": "Bookkeepr GmbH",
+      "title": "App Developer",
+      "years": "10.2023 - 10.2024",
+      "mainTech": ["Flutter"],
+      "icon": "fas fa-code",
+      "technologies": [
+        "REST API",
+        "Nest.js",
+        "Next.js",
+        "Docker",
+        "GitHub Projects"
+      ]
+    },
+    {
+      "company": "ISIS Papyrus Europe",
+      "title": "Front-end Intern",
+      "years": "09.2022 - 12.2022",
+      "mainTech": ["React"],
+      "icon": "fab fa-react",
+      "technologies": ["React", "Jest", "Jenkins", "SCRUM"]
+    },
+    {
+      "company": "FH St. Pölten",
+      "title": "Bachelor Media Technology",
+      "years": "09.2020 - 10.2023",
+      "icon": "fas fa-graduation-cap",
+      "technologies": [
+        "Flutter",
+        "Javascript",
+        "Java",
+        "ASP.NET",
+        "PHP",
+        "Python",
+        "Unity",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "company": "Red Cross Korneuburg",
+      "title": "Civil Service: Patient and Ambulance Transport",
+      "years": "07.2019 - 06.2020",
+      "mainTech": ["Paramedic"],
+      "icon": "fas fa-plus-circle",
+      "technologies": ["First Aid", "Patient Transport", "Ambulance Service"]
+    },
+    {
+      "company": "Vienna Business School Floridsdorf",
+      "title": "Handelsakademie",
+      "years": "2014 - 2019",
+      "icon": "fas fa-money-check-alt",
+      "mainTech": ["Matura"],
+      "technologies": ["Accounting", "Business Management"]
+    }
+  ]
+}

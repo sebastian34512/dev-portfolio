@@ -11,6 +11,11 @@ const Projects: React.FC<Props> = ({ resumeBasicInfo }) => {
   const [selectedProject, setSelectedProject] = useState<Project | undefined>(
     undefined,
   );
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   const detailsModalShowHandler = (data: Project) => {
     setDetailsModalShow(true);
@@ -49,6 +54,8 @@ const Projects: React.FC<Props> = ({ resumeBasicInfo }) => {
     </div>
   ));
 
+  const visibleProjects = projects?.slice(0, 3);
+
   return (
     <section id="portfolio">
       <div className="col-md-12">
@@ -56,8 +63,28 @@ const Projects: React.FC<Props> = ({ resumeBasicInfo }) => {
           <span>{sectionName}</span>
         </h1>
         <div className="col-md-12 mx-auto">
-          <div className="row mx-auto">{projects}</div>
+          <div className="row mx-auto">{visibleProjects}</div>
+          {/* Der ausklappbare Bereich */}
+          <div className={`expandable-content ${isExpanded ? "expanded" : ""}`}>
+            <div className="row mx-auto">
+              {projects?.slice(3)} {/* Zeige nur Projekte nach den ersten 3 */}
+            </div>
+          </div>
         </div>
+
+        {/* Nur anzeigen, wenn es mehr als drei Projekte gibt */}
+        {(projects?.length ?? 4) > 3 && (
+          <div className="text-center mt-3">
+            <button onClick={toggleExpand} className="toggle-button">
+              {isExpanded ? (
+                <i className="fas fa-chevron-up"></i> // Pfeil nach oben
+              ) : (
+                <i className="fas fa-chevron-down"></i> // Pfeil nach unten
+              )}
+            </button>
+          </div>
+        )}
+
         {detailsModalShow && (
           <ProjectDetailsModal
             onHide={detailsModalCloseHandler}

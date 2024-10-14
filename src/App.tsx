@@ -105,7 +105,7 @@ const App: React.FC = () => {
         >
           <span
             className="iconify language-icon"
-            data-icon="twemoji-flag-for-flag-poland"
+            data-icon="twemoji-flag-for-flag-germany"
             data-inline="false"
             id={window.$secondaryLanguageIconId}
           ></span>

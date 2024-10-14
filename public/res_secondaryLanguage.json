@@ -1,116 +1,212 @@
 {
-    "basic_info": {
-      "description_header": "Cześć",
-      "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
-      "section_name": {
-        "about": "O mnie",
-        "projects": "Projekty",
-        "skills": "Umiejętności",
-        "experience": "Doświadczenie"
-      }
+  "basic_info": {
+    "description_header": "Grüß dich",
+    "description": "👋 Mein Name ist Sebastian Koller. Ich bin ambitionierter Web- und Mobile-Entwickler mit umfangreicher Erfahrung in Flutter, React, React Native und Nest.js. Ich bin immer offen für neue Erfahrungen und Eindrücke und lerne gerne dazu. Neben meinen Programmierprojekten beschäftige ich mich gerne mit meinem 3D-Drucker, meinen zahlreichen Pflanzen und mit meiner Katze. Wenn du mehr über mich oder meine Arbeit erfahren möchtest, kontaktiere mich gerne unter <a href='mailto:me@sebastiankoller.at'>me@sebastiankoller.at</a>.",
+    "section_name": {
+      "about": "Über mich",
+      "projects": "Projekte",
+      "skills": "Fertigkeiten",
+      "experience": "Erfahrung"
+    }
+  },
+  "projects": [
+    {
+      "title": "Environmental Storytelling",
+      "startDate": "2024",
+      "description": "Beim Environmental Storytelling Workshop der Summer School Woche 2024 mussten wir eine Geschichte in eine Umgebung integrieren. Wir haben uns für eine Mordszene entschieden und viele Elemente an die Ereignisse der Manson Family und den Mord an Sharon Tate angelehnt. Beim Projekt konnten wir unsere Unity Kenntnisse vertiefen sowie mit Blender und Photoshop an den Assets arbeiten.",
+      "images": [
+        "images/portfolio/environmental-storytelling/Pic2.png",
+        "images/portfolio/environmental-storytelling/Pic3.png",
+        "images/portfolio/environmental-storytelling/Pic4.png"
+      ],
+      "url": "https://www.youtube.com/watch?v=aBCjvf81zHM",
+      "technologies": [
+        {
+          "class": "devicon-unity-plain",
+          "name": "Unity"
+        },
+        {
+          "class": "devicon-photoshop-plain",
+          "name": "Photoshop"
+        },
+        {
+          "class": "devicon-blender-original",
+          "name": "Blender"
+        }
+      ]
     },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
-  }
+    {
+      "title": "Murder Menu",
+      "startDate": "2023-2024",
+      "description": "Murder Menu ist eine Krimi Dinner App, an der ich seit Beginn meines Masterstudiums mit zwei Kolleginnen arbeite. Beim Projekt haben wir React Native gelernt, unsere Fertigkeiten in Nest.js verbessert und generell viel über App Entwicklung und Dev-Team Management gelernt. Wenn dich die App interessiert, schau gerne auf unserer Webseite vorbei.",
+      "images": [
+        "images/portfolio/murder-menu/screen_mockup.png",
+        "images/portfolio/murder-menu/Projektevernissage_SS24.jpg"
+      ],
+      "url": "https://murder-menu.com",
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React Native"
+        },
+        {
+          "class": "devicon-nestjs-plain",
+          "name": "Nest.js"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Ameisenrechner",
+      "startDate": "2023",
+      "description": "Der Ameisenrechner war das Initialprojekt der Mobile Masterklasse. Das Thema war 'print-to-mobile', bei dem man einen gedruckten QR-Code mit einem digitalen Produkt verknüpfen musste. Die Appidee ist eigentlich aus einem Gespräch unter Freunden entstanden und ich hab das Projekt dafür genutzt, um meine Flutter-Kenntnisse aufzufrischen.",
+      "images": [
+        "images/portfolio/ameisenrechner/ameisenrechner_mockup.png",
+        "images/portfolio/ameisenrechner/qr.jpeg"
+      ],
+      "url": "https://mfg.fhstp.ac.at/allgemein/print-to-mobile-ameisenrechner/",
+      "technologies": [
+        {
+          "class": "devicon-flutter-plain",
+          "name": "Flutter"
+        }
+      ]
+    },
+    {
+      "title": "INGO",
+      "startDate": "2023",
+      "description": "INGO ist ein Projekt, an dem ich zusammen mit sieben Studienkolleginnen im Projektsemester des Bachelors Medientechnik gearbeitet habe. Über 6 Monate haben wir eine App mit Flutter, Express.js und Prisma entwickelt, die es Nutzer*innen ermöglicht, ihre Finanzen zu verwalten. Das Projekt war maßgeblich für meinen Werdegang, ich habe viel über Teamarbeit, Projektmanagement und App Entwicklung gelernt. Leider ist die App nicht mehr in den Stores verfügbar, auch die Webseite ist nicht mehr aktiv.",
+      "images": [
+        "images/portfolio/ingo/mockups.png",
+        "images/portfolio/ingo/gruppenfoto.png"
+      ],
+      "url": "https://www.instagram.com/ingoapp/",
+      "technologies": [
+        {
+          "class": "devicon-flutter-original",
+          "name": "Flutter"
+        },
+        {
+          "class": "devicon-express-plain",
+          "name": "Express.js"
+        }
+      ]
+    },
+    {
+      "title": "Bachelorarbeit Unity",
+      "startDate": "2023",
+      "description": "Für meine Bachelorarbeit habe ich einen Prototypen in Unity entwickelt. Es ging mir dabei darum, die Möglichkeiten von Unity für die Entwicklung von VR-Anwendungen für die Lehre zu evaluieren. Bei dem Prototyp hat der Spieler die Größe eines Schmetterlings um hautnah mitzuerleben, wie sich der Lebenszyklus eines Schmetterlings um ihn herum abspielt.",
+      "images": [
+        "images/portfolio/bachelorarbeit/schmetterling.png",
+        "images/portfolio/bachelorarbeit/showcase.gif"
+      ],
+      "url": "https://github.com/sebastian34512/lifecycle",
+      "technologies": [
+        {
+          "class": "devicon-unity-plain",
+          "name": "Unity"
+        },
+        {
+          "class": "devicon-blender-original",
+          "name": "Blender"
+        }
+      ]
+    },
+    {
+      "title": "Automatische Bewässerung",
+      "startDate": "2022",
+      "description": "Mein aufwendigstes 3D-Druck Projekt war eine Steuerungsanlage für eine automatische Bewässerung. Das Projekt habe ich für zwei Fächer während meines Bachelorsstudiums umgesetzt. Ich habe extrem viel über Microkontroller und Elektronik gelernt und konnte meine 3D-Druck Kenntnisse vertiefen.",
+      "images": [
+        "images/portfolio/watering/top.jpg",
+        "images/portfolio/watering/inside1.jpg",
+        "images/portfolio/watering/inside2.jpg"
+      ],
+      "url": "https://showreel.fhstp.ac.at/post/649",
+      "technologies": [
+        {
+          "class": "devicon-cplusplus-plain",
+          "name": "C++"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "FH St. Pölten",
+      "title": "Master Interactive Technologies",
+      "years": "09.2023 - heute",
+      "mainTech": ["Masterklasse Mobile"],
+      "icon": "fas fa-graduation-cap",
+      "technologies": [
+        "Flutter",
+        "Nest.js",
+        "Swift",
+        "Kotlin",
+        "Vue.js",
+        "React Native"
+      ]
+    },
+    {
+      "company": "Bookkeepr GmbH",
+      "title": "App Developer",
+      "years": "10.2023 - 10.2024",
+      "mainTech": ["Flutter"],
+      "icon": "fas fa-code",
+      "technologies": [
+        "REST API",
+        "Nest.js",
+        "Next.js",
+        "Docker",
+        "GitHub Projects"
+      ]
+    },
+    {
+      "company": "ISIS Papyrus Europe",
+      "title": "Praktikant Front-end",
+      "years": "09.2022 - 12.2022",
+      "mainTech": ["React"],
+      "icon": "fab fa-react",
+      "technologies": ["React", "Jest", "Jenkins", "SCRUM"]
+    },
+    {
+      "company": "FH St. Pölten",
+      "title": "Bachelor Medientechnik",
+      "years": "09.2020 - 10.2023",
+      "icon": "fas fa-graduation-cap",
+      "technologies": [
+        "Flutter",
+        "Javascript",
+        "Java",
+        "ASP.NET",
+        "PHP",
+        "Python",
+        "Unity",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "company": "Rotes Kreuz Korneuburg",
+      "title": "Zivildienst Kranken- und Rettungstransport",
+      "years": "07.2019 - 06.2020",
+      "mainTech": ["Sanitäter"],
+      "icon": "fas fa-plus-circle",
+      "technologies": ["Erste Hilfe", "Krankentransport", "Rettungsdienst"]
+    },
+    {
+      "company": "Vienna Business School Floridsdorf",
+      "title": "Handelsakademie",
+      "years": "2014 - 2019",
+      "icon": "fas fa-money-check-alt",
+      "mainTech": ["Matura"],
+      "technologies": ["Buchhaltung", "Betriebswirtschaft"]
+    }
+  ]
+}

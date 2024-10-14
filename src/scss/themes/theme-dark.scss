@@ -1,3 +1,8 @@
+$main-color: #e1efe6;
+$secondary-color: #0a8754;
+$tertiary-color: #223843;
+$accent-color: #ce2d4f;
+
 body[data-theme="dark"] {
   @import "../dark-slider.scss";
 
@@ -49,6 +54,14 @@ body[data-theme="dark"] {
     .card {
       background: #6d6d6d;
       color: white;
+    }
+
+    a {
+      color: $main-color !important;
+    }
+
+    a:visited {
+      color: $accent-color !important;
     }
   }
 
