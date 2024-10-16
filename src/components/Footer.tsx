@@ -25,7 +25,8 @@ const Footer: React.FC<Props> = ({ sharedBasicInfo }) => {
               Copyright &copy;{" "}
               {sharedBasicInfo?.basic_info
                 ? sharedBasicInfo.basic_info.name
-                : "???"}
+                : "???"}{" "}
+              | <a href="/impressum">Impressum</a>
             </small>
           </div>
         </div>

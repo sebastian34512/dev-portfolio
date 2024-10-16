@@ -8,6 +8,8 @@ import Experience from "./components/Experience.tsx";
 import Projects from "./components/Projects.tsx";
 import Skills from "./components/Skills.tsx";
 import { ResumeData, SharedData } from "./types/types.ts";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Impressum from "./pages/Impressum.tsx";
 
 const App: React.FC = () => {
   const [resumeData, setResumeData] = useState<ResumeData>({});
@@ -75,48 +77,64 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <Header sharedData={sharedData.basic_info} />
-      <div className="col-md-12 mx-auto text-center language">
-        <div
-          onClick={() =>
-            applyPickedLanguage(
-              window.$primaryLanguage,
-              window.$secondaryLanguageIconId,
-            )
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <Header sharedData={sharedData.basic_info} />
+              <div className="col-md-12 mx-auto text-center language">
+                <div
+                  onClick={() =>
+                    applyPickedLanguage(
+                      window.$primaryLanguage,
+                      window.$secondaryLanguageIconId,
+                    )
+                  }
+                  style={{ display: "inline" }}
+                >
+                  <span
+                    className="iconify language-icon mr-5"
+                    data-icon="twemoji-flag-for-flag-united-kingdom"
+                    data-inline="false"
+                    id={window.$primaryLanguageIconId}
+                  ></span>
+                </div>
+                <div
+                  onClick={() =>
+                    applyPickedLanguage(
+                      window.$secondaryLanguage,
+                      window.$primaryLanguageIconId,
+                    )
+                  }
+                  style={{ display: "inline" }}
+                >
+                  <span
+                    className="iconify language-icon"
+                    data-icon="twemoji-flag-for-flag-germany"
+                    data-inline="false"
+                    id={window.$secondaryLanguageIconId}
+                  ></span>
+                </div>
+              </div>
+              <About
+                resumeBasicInfo={resumeData}
+                sharedBasicInfo={sharedData}
+              />
+              <Projects resumeBasicInfo={resumeData} />
+              <Skills
+                sharedBasicInfo={sharedData}
+                resumeBasicInfo={resumeData}
+              />
+              <Experience resumeBasicInfo={resumeData} />
+              <Footer sharedBasicInfo={sharedData} />
+            </div>
           }
-          style={{ display: "inline" }}
-        >
-          <span
-            className="iconify language-icon mr-5"
-            data-icon="twemoji-flag-for-flag-united-kingdom"
-            data-inline="false"
-            id={window.$primaryLanguageIconId}
-          ></span>
-        </div>
-        <div
-          onClick={() =>
-            applyPickedLanguage(
-              window.$secondaryLanguage,
-              window.$primaryLanguageIconId,
-            )
-          }
-          style={{ display: "inline" }}
-        >
-          <span
-            className="iconify language-icon"
-            data-icon="twemoji-flag-for-flag-germany"
-            data-inline="false"
-            id={window.$secondaryLanguageIconId}
-          ></span>
-        </div>
-      </div>
-      <About resumeBasicInfo={resumeData} sharedBasicInfo={sharedData} />
-      <Projects resumeBasicInfo={resumeData} />
-      <Skills sharedBasicInfo={sharedData} resumeBasicInfo={resumeData} />
-      <Experience resumeBasicInfo={resumeData} />
-      <Footer sharedBasicInfo={sharedData} />
-    </div>
+        />
+        <Route path="/impressum" element={<Impressum />} />
+      </Routes>
+    </Router>
   );
 };
 
