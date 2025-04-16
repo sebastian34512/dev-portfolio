@@ -11,6 +11,30 @@
   },
   "projects": [
     {
+      "title": "Time Parabox",
+      "startDate": "2024",
+      "description": "Time Parabox is a hybrid escape game that combines a physical puzzle box with a React Native mobile app. Created by a team of ten students, the game takes players on a journey through different historical eras. My contribution focused on connecting the ESP32 microcontroller to the app via Bluetooth Low Energy. I worked on the integration of BLE into the React Native app and helped ensure the interaction between digital riddles and physical locks worked smoothly. Phone Mockup by Feepik.",
+      "images": [
+        "images/portfolio/time-parabox/mockup.jpg",
+        "images/portfolio/time-parabox/box.jpeg"
+      ],
+      "url": "https://sophiagruber.pages.dev/project-time-parabox/",
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React Native"
+        },
+        {
+          "class": "devicon-react-plain",
+          "name": "Expo"
+        },
+        {
+          "class": "devicon-arduino-plain",
+          "name": "Bluetooth Low Energy (BLE)"
+        }
+      ]
+    },
+    {
       "title": "Environmental Storytelling",
       "startDate": "2024",
       "description": "In the Environmental Storytelling workshop during the 2024 Summer School week, we had to integrate a story into an environment. We chose a murder scene and incorporated many elements inspired by the events of the Manson Family and the murder of Sharon Tate. During the project, we deepened our Unity skills and worked on the assets using Blender and Photoshop.",
@@ -37,7 +61,7 @@
     },
     {
       "title": "Murder Menu",
-      "startDate": "2023-2024",
+      "startDate": "2023-2025",
       "description": "Murder Menu is a dinner and crime app that I have been working on with two colleagues since the start of my Master's program. In the project, we learned React Native, improved our skills in Nest.js, and generally learned a lot about app development and dev-team management. If you're interested in the app, feel free to check out our website.",
       "images": [
         "images/portfolio/murder-menu/screen_mockup.png",
@@ -138,6 +162,14 @@
     }
   ],
   "experience": [
+    {
+      "company": "Orbyz Media GmbH",
+      "title": "App Developer",
+      "years": "12.2024 - present",
+      "mainTech": ["Flutter"],
+      "icon": "fas fa-code",
+      "technologies": ["REST API", "Django", "GitHub Projects"]
+    },
     {
       "company": "FH St. Pölten",
       "title": "Master Interactive Technologies",

@@ -11,6 +11,30 @@
   },
   "projects": [
     {
+      "title": "Time Parabox",
+      "startDate": "2024",
+      "description": "Time Parabox ist ein hybrides Escape Game, das eine physische Rätselbox mit einer React Native App verbindet. In einem Team aus zehn Personen haben wir über mehrere Monate hinweg eine immersive Spielerfahrung umgesetzt, bei der man durch verschiedene historische Epochen reist. Ich war maßgeblich an der Anbindung des ESP32-Mikrocontrollers via Bluetooth Low Energy beteiligt und habe die Kommunikation zwischen der App und den physischen Puzzle-Elementen mitentwickelt. Zusätzlich habe ich an der Integration der BLE-Komponenten in die App gearbeitet und bei der praktischen Umsetzung der Hardware-Logik mitgewirkt. Phone Mockup by Feepik.",
+      "images": [
+        "images/portfolio/time-parabox/mockup.jpg",
+        "images/portfolio/time-parabox/box.jpeg"
+      ],
+      "url": "https://sophiagruber.pages.dev/project-time-parabox/",
+      "technologies": [
+        {
+          "class": "devicon-react-plain",
+          "name": "React Native"
+        },
+        {
+          "class": "devicon-react-plain",
+          "name": "Expo"
+        },
+        {
+          "class": "devicon-arduino-plain",
+          "name": "Bluetooth Low Energy (BLE)"
+        }
+      ]
+    },
+    {
       "title": "Environmental Storytelling",
       "startDate": "2024",
       "description": "Beim Environmental Storytelling Workshop der Summer School Woche 2024 mussten wir eine Geschichte in eine Umgebung integrieren. Wir haben uns für eine Mordszene entschieden und viele Elemente an die Ereignisse der Manson Family und den Mord an Sharon Tate angelehnt. Beim Projekt konnten wir unsere Unity Kenntnisse vertiefen sowie mit Blender und Photoshop an den Assets arbeiten.",
@@ -37,7 +61,7 @@
     },
     {
       "title": "Murder Menu",
-      "startDate": "2023-2024",
+      "startDate": "2023-2025",
       "description": "Murder Menu ist eine Krimi Dinner App, an der ich seit Beginn meines Masterstudiums mit zwei Kolleginnen arbeite. Beim Projekt haben wir React Native gelernt, unsere Fertigkeiten in Nest.js verbessert und generell viel über App Entwicklung und Dev-Team Management gelernt. Wenn dich die App interessiert, schau gerne auf unserer Webseite vorbei.",
       "images": [
         "images/portfolio/murder-menu/screen_mockup.png",
@@ -138,6 +162,14 @@
     }
   ],
   "experience": [
+    {
+      "company": "Orbyz Media GmbH",
+      "title": "App Developer",
+      "years": "12.2024 - heute",
+      "mainTech": ["Flutter"],
+      "icon": "fas fa-code",
+      "technologies": ["REST API", "Django", "GitHub Projects"]
+    },
     {
       "company": "FH St. Pölten",
       "title": "Master Interactive Technologies",
