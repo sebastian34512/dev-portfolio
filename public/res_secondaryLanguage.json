@@ -11,6 +11,46 @@
   },
   "projects": [
     {
+      "title": "Masterarbeit - CI/CD",
+      "startDate": "2025",
+      "description": "<h3>CI/CD für React&nbsp;Native – von „funktioniert lokal“ zu reproduzierbaren Releases</h3><p>Ich habe eine <b>End-to-End CI/CD-Pipeline</b> für eine plattformübergreifende React-Native-App aufgebaut (iOS &amp; Android). Ziel: <b>verlässliche Builds</b>, <b>automatisches Testing</b> und <b>ein Klick bis TestFlight/Play Console</b> – ohne manuelle Firefights.</p><ul><li><b>Stack:</b> GitHub Actions (CI), Fastlane (CD), Jest (Unit/Integration), Detox (GUI/E2E), ESLint, semantische Versionierung</li><li><b>Workflows:</b> getrennte iOS/Android-Pipelines mit Linting → Tests → Build → Artefakte → Release</li><li><b>E2E-Tests:</b> Detox automatisiert kritische Flows; Android auf <i>self-hosted Runner</i> (stabil, schneller), iOS ebenfalls dort (Apple-Constraints)</li><li><b>Observability:</b> Metriken &amp; Artefakte (Build-Status, Coverage, Laufzeiten) zentral aufbereitet – dev- und PM-tauglich</li></ul><h4>Impact</h4><ul><li><b>Releases ohne Bauchweh:</b> reproduzierbar, nachvollziehbar, versioniert</li><li><b>Debug-Zeit ↓</b> durch lokale Repro-Runs und gezieltes Caching (ohne Gradle-Flakiness)</li><li><b>Fewer manual errors:</b> Pipeline bricht bei echten Problemen – nicht erst der Store-Review</li></ul><h4>Messbar</h4><ul><li><b>174</b> CI-Testruns (~<b>2075</b> min ≈ 35h) während der Stabilisierung</li><li><b>19</b> Release-Runs (~<b>168</b> min); Umzug der Android-E2E-Tests auf self-hosted Runner eliminierte die größten Flakes</li></ul><h4>Mein Beitrag</h4><ul><li>Konzeption &amp; Umsetzung der kompletten Pipeline (Workflows, Fastlane-Lanes, Detox-Setup, SemVer)</li><li>Qualitätssicherung in den Prozess gekippt: Linting, Tests, Artefakte, Dashboards – <b>vor</b> dem Store-Upload</li></ul><p><i>Ergebnis:</i> Eine belastbare Release-Kette, die aus Codeänderungen <b>schnell</b> <u>testbare Builds</u> und <u>produktreife Releases</u> macht.</p>",
+      "images": [
+        "images/portfolio/masterarbeit/testing.jpeg",
+        "images/portfolio/masterarbeit/release.jpeg"
+      ],
+      "url": null,
+      "technologies": [
+        { "class": "devicon-githubactions-plain", "name": "GitHub Actions" },
+        { "class": "devicon-fastapi-plain", "name": "Fastlane (Deployment)" },
+        { "class": "devicon-jest-plain", "name": "Jest (Unit/Integration)" },
+        { "class": "devicon-eslint-plain", "name": "ESLint" },
+        { "class": "devicon-react-plain", "name": "React Native" },
+        { "class": "devicon-android-plain", "name": "Android" },
+        { "class": "devicon-apple-plain", "name": "iOS" }
+      ]
+    },
+
+    {
+      "title": "Murder Menu – SS25",
+      "startDate": "SS 2025",
+      "description": "<h3>CI/CD, Testing & neue Stories (SS25)</h3><p><b>Sommersemester 2025:</b> Zwei weitere Usertests (u. a. mit Masterklasse) mit Fokus auf Stabilität, Verständlichkeit und Pacing. Parallel wurden über TFG-Ausschreibungen <b>zwei neue Stories</b> inkl. Charaktere, Hints und Animationen von <b>fünf Mitwirkenden</b> produziert und für die Integration vorbereitet. In meiner Masterarbeit habe ich <b>CI/CD</b> und <b>Testing</b> eingeführt, um den Release-Pfad zu professionalisieren.</p><h3>Engineering</h3><ul><li><b>CI/CD mit GitHub Actions:</b> Builds, Checks, Artefakte; Grundlage für App/Play-Store-Pipelines</li><li><b>Automatisierte Tests:</b> FE/BE-Tests + reproduzierbare Auswertung aus Usertests</li><li><b>Stabilisierung/Observability:</b> Feinschliff auf Basis der WS24-Erkenntnisse</li></ul><h3>User Research</h3><ul><li>Masterklasse-Test: vollständiger Dinner-Flow unter Realbedingungen</li><li>Zweiter externer Test: Onboarding-Pfad, Rollenhefte, Phasen-Timing verifiziert</li><li>Auswertung wie gehabt: Time-Stamped Notizen → CSV/Python → Notion → GitHub-Issues</li></ul><h3>Content-Skalierung</h3><ul><li>2 neue Module (Story/Chars/Hints/Anims); Briefings &amp; technische Richtlinien für künftige Autor*innen/Designer*innen geschärft</li></ul><h3>Meine Learnings (Sebastian)</h3><ul><li><b>Pipeline-Denken:</b> Qualität entsteht aus Prozess (CI/CD, Tests, Monitoring), nicht aus heroischen Einzelaktionen</li><li><b>Skalierung von Content:</b> Ohne klare <b>Guidelines</b> (Struktur, Schnittstellen, Dateiformate, QA-Checklisten) explodiert die Nacharbeit</li><li><b>Messbarkeit:</b> Mit reproduzierbaren Pipelines wird Fortschritt objektiv – weniger Bauchgefühl, mehr Daten</li></ul><h3>Ausblick aus SS25</h3><ul><li>Integration der neuen Stories, weitere gruppenbasierte Tests</li><li>Polishing &amp; Push-Benachrichtigungen</li><li>Ziel: <b>stabiler Multi-Module-Release</b> in App Store &amp; Play Store</li></ul>",
+      "images": [
+        "images/portfolio/murder-menu/ss25/usertest.jpg",
+        "images/portfolio/murder-menu/ss25/usertest2.jpg"
+      ],
+      "url": "https://murder-menu.com",
+      "technologies": [
+        {
+          "class": "devicon-githubactions-plain",
+          "name": "GitHub Actions (CI/CD)"
+        },
+        { "class": "devicon-jest-plain", "name": "Testing" },
+        { "class": "devicon-docker-plain", "name": "Docker" },
+        { "class": "devicon-react-plain", "name": "React Native" },
+        { "class": "devicon-nestjs-plain", "name": "Nest.js" }
+      ]
+    },
+    {
       "title": "Time Parabox",
       "startDate": "2024",
       "description": "Time Parabox ist ein hybrides Escape Game, das eine physische Rätselbox mit einer React Native App verbindet. In einem Team aus zehn Personen haben wir über mehrere Monate hinweg eine immersive Spielerfahrung umgesetzt, bei der man durch verschiedene historische Epochen reist. Ich war maßgeblich an der Anbindung des ESP32-Mikrocontrollers via Bluetooth Low Energy beteiligt und habe die Kommunikation zwischen der App und den physischen Puzzle-Elementen mitentwickelt. Zusätzlich habe ich an der Integration der BLE-Komponenten in die App gearbeitet und bei der praktischen Umsetzung der Hardware-Logik mitgewirkt. Phone Mockup by Feepik.",
@@ -32,6 +72,24 @@
           "class": "devicon-arduino-plain",
           "name": "Bluetooth Low Energy (BLE)"
         }
+      ]
+    },
+    {
+      "title": "Murder Menu – WS24",
+      "startDate": "WS 2024/25",
+      "description": "<h3>In-App-Käufe, Story-Overhaul & erster Volltest (WS24)</h3><p><b>Drittes Semester, Produktreife im Blick:</b> <b>In-App-Käufe</b> über <b>RevenueCat</b> (zentrale Abwicklung Apple/Google), Distribution über <b>TestFlight</b> &amp; Play Console für externe Tester*innen. Die Story wurde <b>komplett überarbeitet</b> (Lücken geschlossen, Rollenhefte erstellt), UI für langes Lesen mit <b>Slider</b> (Phasen) &amp; <b>Akkordeon</b> (Rolleninfos) umgesetzt. <b>Backend-Hardening:</b> <b>Portainer</b> für Container-Ops, <b>BetterStack</b> + Telegram-Alerts für Logging/Alarme, <b>Swagger</b> für API-Doku.</p><h3>User*innen-Test (23.02.2025)</h3><ul><li>8 Teilnehmende, kompletter Dinner-Durchlauf (17:00–21:00)</li><li>Live-Beobachtungen via WhatsApp (Time-Stamps), Ton/Video-Mitschnitt</li><li>Auswertungspipeline: WhatsApp → <b>Python</b>/CSV → <b>Notion</b> (Kategorisierung/Priorisierung) → CSV → automatische <b>GitHub-Issues</b> (GitHub Projects)</li><li><b>SUS 86,1</b> (sehr gut); Zahlungsbereitschaft ~20€; 50% der Erfahrenen finden die App besser als analog; Story &amp; Rollen gut mit konkreten Verbesserungsvorschlägen</li></ul><h3>Errungenschaften</h3><ul><li>Aufnahme in den <b>Creative Pre-Incubator</b> (FH St. Pölten)</li><li><b>1. Platz</b> bei der Projektvernissage (Kategorie)</li></ul><h3>Meine Learnings</h3><ul><li><b>Release-Kette end-to-end:</b> App Store Connect/Play Console, externe Testergruppen, Testflight-Einladungen – viel Orga, aber riesiger Hebel</li><li><b>Ops/Observability zählen:</b> Portainer + BetterStack + Telegram ersparen uns blinde Flecken; Fehler werden real zeitnah sichtbar</li><li><b>Story-Realität:</b> Eine stimmige Krimi-Story für 8 Rollen ist Systems Engineering – Visualisieren, Lücken schließen, Aufgabenverteilung balancieren</li><li><b>Mentales Modell:</b> „Perfekt bevor Test“ ist Gift – frühes echtes Feedback beschleunigt den Fortschritt messbar</li></ul><h3>Ausblick aus WS24</h3><ul><li>Bugfixes, <b>UX-Verbesserungen</b>, <b>Push-Notifications</b></li><li>Mehr Inhalte und Vorbereitung auf Release mit <b>mehreren Modulen</b></li></ul>",
+      "images": [
+        "images/portfolio/murder-menu/ws24/TeamMurderMenu.jpg",
+        "images/portfolio/murder-menu/ws24/Projektevernissage_WS24.jpg"
+      ],
+      "url": "https://murder-menu.com",
+      "technologies": [
+        { "class": "devicon-react-plain", "name": "React Native" },
+        { "class": "devicon-nestjs-plain", "name": "Nest.js" },
+        { "class": "devicon-apple-plain", "name": "TestFlight" },
+        { "class": "devicon-google-plain", "name": "Play Console" },
+        { "class": "devicon-docker-plain", "name": "Portainer" },
+        { "class": "devicon-swagger-plain", "name": "Swagger" }
       ]
     },
     {
@@ -60,31 +118,20 @@
       ]
     },
     {
-      "title": "Murder Menu",
-      "startDate": "2023-2025",
-      "description": "Murder Menu ist eine Krimi Dinner App, an der ich seit Beginn meines Masterstudiums mit zwei Kolleginnen arbeite. Beim Projekt haben wir React Native gelernt, unsere Fertigkeiten in Nest.js verbessert und generell viel über App Entwicklung und Dev-Team Management gelernt. Wenn dich die App interessiert, schau gerne auf unserer Webseite vorbei.",
+      "title": "Murder Menu – SS24",
+      "startDate": "SS 2024",
+      "description": "<h3>MVP-Ausbau, Inhalte & Session Management (SS24)</h3><p><b>Zweiter Meilenstein:</b> Der MVP wurde zu einer nutzbaren App ausgebaut. <b>Registrierung &amp; Login</b> (inkl. Verifizierung &amp; Passwort-Reset) sind robust, <b>Modul-„Kauf”</b> (noch ohne Zahlungsabwicklung) samt <b>Spielplanung</b> (Datum/Uhrzeit/Ort) &amp; <b>Invite-Code</b> sind umgesetzt. <b>Session Management</b> über WebSockets (<code>Socket.io</code>) synchronisiert Status/Voting und stellt sicher, dass alle im Spiel sind, bevor es weitergeht. Inhalte aus TFG (Story, Grafiken, Animationen) wurden produktionsnah eingebunden.</p><h3>Content-Pipeline</h3><ul><li>Grafiken/Lottie-Animationen werden via <b>nginx-Docker</b> vom eigenen Server ausgeliefert (statt Firebase) → Kontrolle &amp; reproduzierbare Deployments</li><li><b>Lottie</b> Integration inkl. Logo-Splash via nativer Implementierung (Obj-C/Swift/Kotlin), da kein passendes RN-Package existierte</li></ul><h3>User Research</h3><ul><li>Projektvernissage mit erstem strukturierten Quicktest: Registrierung → Klickstrecke → <b>SUS 85,56</b> (exzellent) und <b>37 Beta-Anmeldungen</b></li></ul><h3>Ausblick aus SS24</h3><ul><li>Story vollständig in die DB integrieren und Lesescreens für viel Text optimieren</li><li>Größerer End-to-End-Usertest; Developer-Accounts (App/Play) nutzen; reale Käufe vorbereiten</li></ul><h3>Meine Learnings</h3><ul><li><b>Auth-Realität:</b> Der „langweilige“ Teil (Verifikation, Reset, Fehlerfälle) ist komplex und zentral für Vertrauen</li><li><b>Architekturentscheidung:</b> Eigenes Asset-Hosting via <b>nginx+Docker</b> gibt uns Stabilität &amp; Unabhängigkeit</li><li><b>Tooling/Integrationen:</b> After Effects → <b>Lottie</b>; erstes systematisches Arbeiten mit <b>Socket.io</b> &amp; FE/BE-Schnittstellen</li><li><b>Scope-Schätzung:</b> Ehemals 70–80% „fertig“ war real 20–30%; seitdem konservativere Planung</li></ul>",
       "images": [
-        "images/portfolio/murder-menu/screen_mockup.png",
-        "images/portfolio/murder-menu/Projektevernissage_SS24.jpg"
+        "images/portfolio/murder-menu/ss24/screen_mockup.png",
+        "images/portfolio/murder-menu/ss24/Projektevernissage_SS24.jpg"
       ],
       "url": "https://murder-menu.com",
       "technologies": [
-        {
-          "class": "devicon-react-plain",
-          "name": "React Native"
-        },
-        {
-          "class": "devicon-nestjs-plain",
-          "name": "Nest.js"
-        },
-        {
-          "class": "devicon-mongodb-plain",
-          "name": "MongoDB"
-        },
-        {
-          "class": "devicon-docker-plain",
-          "name": "Docker"
-        }
+        { "class": "devicon-react-plain", "name": "React Native" },
+        { "class": "devicon-nestjs-plain", "name": "Nest.js" },
+        { "class": "devicon-mongodb-plain", "name": "MongoDB" },
+        { "class": "devicon-docker-plain", "name": "Docker (nginx assets)" },
+        { "class": "devicon-nodejs-plain", "name": "Socket.io" }
       ]
     },
     {
@@ -101,6 +148,23 @@
           "class": "devicon-flutter-plain",
           "name": "Flutter"
         }
+      ]
+    },
+    {
+      "title": "Murder Menu – WS23",
+      "startDate": "WS 2023/24",
+      "description": "<h3>Kickoff, Prototyp & MVP (WS23)</h3><p><b>Murder Menu</b> ist eine interaktive Dinner-&amp;-Crime-App, die einen kompletten Krimi-Dinner-Abend digital begleitet: Eine Person kauft ein Modul, lädt andere ein, Rollen werden verteilt, in mehreren Phasen erhalten alle neue Hinweise (simulierte Nachrichten, Videos, Fotos, Polizeiberichte), am Ende gibt es Abstimmung &amp; Auflösung. <b>Im ersten Semester</b> lag der Fokus auf <b>Design-Prototyp</b> und <b>funktionsfähigem MVP</b> mit drei Kernabschnitten (<i>Einleitung</i>, <i>Ablauf</i>, <i>Auflösung</i>). Parallel haben wir Architektur, Tooling und Projektstruktur so aufgesetzt, dass das Projekt über mehrere Semester skalieren kann.</p><h3>Technik &amp; Architektur</h3><ul><li><b>Frontend:</b> React Native; State-Management mit <b>Redux</b>; erste Screens &amp; Flows</li><li><b>Backend:</b> NestJS (Basis-API), <b>MongoDB</b> als dokumentenorientierte DB</li><li><b>Deployment:</b> Docker-Image fürs Backend; lauffähig auf Server inkl. DB</li><li><b>Projektmanagement:</b> GitHub Projects (Boards, Issues, Milestones)</li><li><b>Architekturdokumentation:</b> PlantUML-Diagramme (erste Auseinandersetzung mit formaler Architektur)</li></ul><h3>MVP-Inhalte</h3><ul><li>Geführte <b>Einleitung</b> (Onboarding ins Spiel)</li><li>Phasenbasierter <b>Ablauf</b> des Abends (Hinweise/Medien, Schritt-für-Schritt)</li><li><b>Auflösung</b> mit Voting</li></ul><h3>Entwicklung &amp; Stolpersteine</h3><ul><li>Team wurde zu Semesterbeginn kleiner → <b>Scope neu zugeschnitten</b>, Fokus auf Kernfunktionalität statt „nice to have“</li><li>Erstes End-to-End-<b>Deployment</b> (Docker, Server, DB) ohne Vorerfahrung → Iterationen, Troubleshooting, reproduzierbare Setups</li><li><b>Redux</b>-Einführung: Verständnis für Actions/Reducer/Store schrittweise erarbeitet</li><li>Zähes <b>Dev-Setup</b> (Xcode/Simulator/Cocoapods/Node): Root-Cause-Analyse über Dotfiles (.zshrc) &amp; Xcode-Einstellungen</li></ul><h3>Ausblick aus WS23</h3><ul><li><b>Session Management</b> (statt DB-gesteuerter Phasen-Status)</li><li>Mehr &amp; bessere <b>Hinweise</b>; optional <b>Notizen</b> &amp; <b>In-Game-Chat</b></li><li>Stärkerer <b>Usability-Fokus</b> durch Tests mit echten Nutzer*innen</li></ul><h3>Meine Learnings</h3><ul><li><b>Deployment von null:</b> GitHub + Docker sinnvoll verbinden, Images bauen, auf Server bringen, laufend halten</li><li><b>Neue Stacks produktiv machen:</b> Erstkontakt mit React Native &amp; NestJS – gezielt nur das bauen, was den MVP trägt</li><li><b>Arbeitsweise:</b> GitHub Projects als zentrales PM-Tool; weniger Prokrastination, weil das Projekt langfristig &amp; persönlich wichtig ist</li></ul>",
+      "images": [
+        "images/portfolio/murder-menu/ws23/logo.jpg",
+        "images/portfolio/murder-menu/ws23/Projektevernissage_WS23.jpg"
+      ],
+      "url": "https://murder-menu.com",
+      "technologies": [
+        { "class": "devicon-react-plain", "name": "React Native" },
+        { "class": "devicon-nestjs-plain", "name": "Nest.js" },
+        { "class": "devicon-mongodb-plain", "name": "MongoDB" },
+        { "class": "devicon-docker-plain", "name": "Docker" },
+        { "class": "devicon-git-plain", "name": "GitHub Projects" }
       ]
     },
     {
@@ -169,6 +233,21 @@
       "mainTech": ["Flutter"],
       "icon": "fas fa-code",
       "technologies": ["REST API", "Django", "GitHub Projects"]
+    },
+    {
+      "company": "FH St. Pölten – Creative Pre-Incubator",
+      "title": "Teilnehmerin Startup-Inkubator",
+      "years": "2024 - 2024",
+      "mainTech": ["Entrepreneurship"],
+      "icon": "fas fa-lightbulb",
+      "technologies": [
+        "Sales",
+        "Marketing",
+        "Business Development",
+        "Finance",
+        "Pitching",
+        "Team Management"
+      ]
     },
     {
       "company": "FH St. Pölten",

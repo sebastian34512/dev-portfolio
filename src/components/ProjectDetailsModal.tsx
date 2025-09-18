@@ -25,9 +25,8 @@ const ProjectDetailsModal: React.FC<Props> = ({ data, onHide }) => {
     </li>
   ));
 
-  const images = data.images.map((image, index) => (
-    <div key={index} data-src={image} />
-  ));
+  // images is just an array of image URLs
+  const images = data.images;
 
   return (
     <Modal
@@ -48,11 +47,24 @@ const ProjectDetailsModal: React.FC<Props> = ({ data, onHide }) => {
             animation="scaleOutAnimation"
             className="slider-image"
           >
-            {images}
+            {images.map((src, i) => (
+              <div key={i}>
+                <img
+                  src={src}
+                  alt=""
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    backgroundColor: "#000",
+                  }}
+                />
+              </div>
+            ))}
           </AwesomeSlider>
         </div>
         <div className="col-md-10 mx-auto">
-          <h3 style={{ padding: "5px 5px 0 5px" }}>
+          <h2 style={{ padding: "5px 5px 0 5px" }}>
             {data.title}
             {data.url && (
               <a
@@ -67,8 +79,11 @@ const ProjectDetailsModal: React.FC<Props> = ({ data, onHide }) => {
                 ></i>
               </a>
             )}
-          </h3>
-          <p className="modal-description">{data.description}</p>
+          </h2>
+          <div
+            className="modal-description"
+            dangerouslySetInnerHTML={{ __html: data.description }}
+          />
           <ul className="list-inline mx-auto text-center">{technologies}</ul>
         </div>
       </div>
